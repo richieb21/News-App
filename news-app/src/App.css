@@ -1,0 +1,115 @@
+/* NAV BAR STYLING*/
+
+.site-nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  background-color: #363732;
+  height: 80px;
+  margin-bottom: 40px;
+}
+
+.site-title {
+  font-family: Helvetica;
+  text-decoration: none;
+  color: white;
+}
+
+.nav-element {
+  font-family: Helvetica;
+  text-decoration: none;
+  color: white;
+}
+
+.site-nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1vh;
+}
+
+.active {
+  text-align: line-through;
+}
+
+/* NEWSCARD STYLING */
+
+.card {
+  border: 1px solid #DCE1E9;
+  border-radius: 10px;
+  width: 400px;
+  height: 550px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1); 
+  transition: box-shadow 0.3s;
+}
+
+.card .img-container {
+  height: 260px;
+  display: grid;
+  place-items: center;
+}
+
+.card:hover {
+  box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.2); /* Slightly larger shadow for hover effect */
+}
+
+.card-img-top {
+  width: 90%;  /* Sets the maximum width to 90% of the parent element */
+  height: auto; /* Scales the height proportionally to the width */
+  display: block; /* To prevent default inline behavior */
+  margin: 0 auto; /* Centers the image horizontally */
+  border-radius: 5px;
+}
+
+.card a {
+  display: inline-block;
+  padding: 10px 15px;
+  margin-bottom: 3rem;
+  background-color: #66C3FF;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.card a:hover {
+  background-color: #53D8FB;
+}
+
+.text-body {
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Number of lines you want to display */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: Helvetica;
+}
+
+.text-body h5 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Number of lines you want to display */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 20px;
+}
+
+.card .a-button {
+  text-align: center;
+}
+
+.card .text-body {
+  margin-left: 10px;
+}
+
+.news-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
