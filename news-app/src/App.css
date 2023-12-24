@@ -1,22 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Mulish:wght@400;500;600&family=Poppins:wght@400;500;600&display=swap');
+
 /* NAV BAR STYLING*/
 
 .site-nav {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  background-color: #363732;
+  background-color: #66C3FF;
   height: 80px;
   margin-bottom: 40px;
 }
 
 .site-title {
-  font-family: Helvetica;
+  font-family: Montserrat;
+  margin-left: 30px;
+  font-weight: bold;
+  font-size: 40px;
   text-decoration: none;
   color: white;
 }
 
 .nav-element {
-  font-family: Helvetica;
+  font-family: Montserrat;
+  font-size: 20px;
   text-decoration: none;
   color: white;
 }
@@ -25,6 +31,7 @@
   display: flex;
   list-style: none;
   gap: 1vh;
+  margin-right: 40px;
 }
 
 .active {
@@ -40,6 +47,7 @@
   height: 550px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1); 
   transition: box-shadow 0.3s;
+  position: relative;
 }
 
 .card .img-container {
@@ -84,7 +92,7 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-family: Helvetica;
+  font-family: Montserrat;
 }
 
 .text-body h5 {
@@ -98,6 +106,10 @@
 
 .card .a-button {
   text-align: center;
+  position: absolute;
+  bottom: -30px; /* Adjust this value as needed to position the button from the bottom */
+  left: 50%; /* Center the button horizontally */
+  transform: translateX(-50%);
 }
 
 .card .text-body {

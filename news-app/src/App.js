@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 import GetNews from './components/GetNews';
 import Breaking from './components/Breaking';
+import Sports from './components/Sports';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Routes>
           <Route path='/' element={<h1>Hi</h1>}/>
           <Route path='/breaking' element={<Breaking/>}/>
+          <Route path='/sports' element={<Sports/>}/>
         </Routes>
       </div>
     </>

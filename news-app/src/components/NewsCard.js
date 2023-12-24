@@ -13,7 +13,7 @@ const NewsCard = ({title, desc, urlImage, url}) => {
             </div>
         
             <div className='a-button'>
-                <a href={url} class="btn btn-primary">TO SOURCE</a>
+                <a href={url} target='_blank' class="btn btn-primary">TO SOURCE</a>
             </div>
         </div>
     </div>

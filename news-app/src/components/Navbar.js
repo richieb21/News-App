@@ -1,10 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import newsLogo from './news_logo.png';
 
 const Navbar = () => {
   return (
     <nav className='site-nav'>
-        <Link to='/' className='site-title'>The news</Link>
+        <Link to='/' className='site-title'>DAILY SCOOP</Link>
 
         <div className='container'>
             <ul>
