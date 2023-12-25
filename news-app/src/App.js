@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import GetNews from './components/GetNews';
 import Breaking from './components/Breaking';
 import Sports from './components/Sports';
+import LandingPage from './components/LandingPage';
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
       <Navbar/>
       <div className='container'>
         <Routes>
-          <Route path='/' element={<h1>Hi</h1>}/>
+          <Route path='/' element={<LandingPage/>}/>
           <Route path='/breaking' element={<Breaking/>}/>
           <Route path='/sports' element={<Sports/>}/>
         </Routes>

@@ -5,7 +5,7 @@ import newsLogo from './news_logo.png';
 const Navbar = () => {
   return (
     <nav className='site-nav'>
-        <Link to='/' className='site-title'>DAILY SCOOP</Link>
+        <Link to='/' className='site-title'>THE DAILY SCOOP</Link>
 
         <div className='container'>
             <ul>

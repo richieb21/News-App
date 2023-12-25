@@ -1,15 +1,22 @@
 import React, { useState, useEffect } from 'react'
 import NewsCard from './NewsCard'
+import CountrySelect from './CountrySelect';
 
 const Sports = () => {
 
     const [news, setNews] = useState([]);
+    const [country, setCountry] = useState("");
+
+    const handleCountryChange = (event) => {
+        setCountry(event.target.value);
+    }
 
     const api_key = '91cf390ffa6c465eb8ef1a1edf2fb044';
-    const url = `https://newsapi.org/v2/top-headlines?country=us&category=sports&apiKey=${api_key}`
+    const url = `https://newsapi.org/v2/top-headlines?country=${country}&category=sports&apiKey=${api_key}`
   
     useEffect(() => {
-      fetch(url)
+    if (country){
+        fetch(url)
         .then(response => {
           if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
@@ -21,9 +28,8 @@ const Sports = () => {
           setNews(filteredArticles); // Assuming the data object has an 'articles' property
         })
         .catch(error => console.error('Error fetching data:', error));
-    }, []);
-
-    console.log(news)
+    }
+    }, [country]);
   
     const newsCards = news.map((article, index) => (
       <NewsCard
@@ -37,8 +43,14 @@ const Sports = () => {
     ));
 
   return (
-    <div className='news-container'>
-        {newsCards}
+    <div className='page-container'>
+        <CountrySelect
+                selectedCountry={country}
+                onCountryChange={handleCountryChange}
+            />
+        <div className='news-container'>
+            {newsCards}
+        </div>
     </div>
   )
 }
