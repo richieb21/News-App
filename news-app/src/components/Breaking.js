@@ -30,7 +30,6 @@ const Breaking = () => {
       desc={article.description}
       url={article.url}
       urlImage={article.urlToImage}
-      // ...other props
     />
   ));
 

@@ -192,3 +192,27 @@ input[type="text"] {
 .submit-button:hover {
   background-color: #53D8FB;
 }
+
+#red {
+  background-color: #c20114;
+}
+
+#green {
+  background-color: #2dd881;
+}
+
+.text-container {
+  display: flex;
+  justify-content: center;
+  font-family: Montserrat;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.small {
+  font-size: 20px;
+}
+
+.big {
+  font-size: 40px;
+}

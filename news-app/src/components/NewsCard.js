@@ -1,8 +1,8 @@
 import React from 'react'
 
-const NewsCard = ({title, desc, urlImage, url}) => {
+const NewsCard = ({title, desc, urlImage, url, color}) => {
   return (
-    <div className="card">
+    <div id={color} className="card">
         <div className='img-container'>
           <img src={urlImage} class="card-img-top" alt="..."/>
         </div>
